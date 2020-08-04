@@ -4,11 +4,11 @@ author: "Prathmesh Salunkhe"
 date: "04/08/2020"
 output: word_document
 ---
-##Description
+## Description
 run_analysis.R file takes data and preforms cleaning data.
 It returns a cleaned file 'tidy.txt'.
 
-##Assign each data to variables
+## Assign each data to variables
 featureNames <- features.txt
 activityLabels <- acivity_labels.txt
 
@@ -28,7 +28,7 @@ colnames(activity) <- "Activity"
 colnames(subject) <- "Subject"
 completeData <- cbind(features,activity,subject)
 
-##Renaming columns
+## Renaming columns
 "Acc"      to  "Accelerometer"
 "Gyro"     to  "Gyroscope"
 "BodyBody" to  "Body"
@@ -42,7 +42,7 @@ completeData <- cbind(features,activity,subject)
 "angle"    to  "Angle"
 "gravity"  to  "Gravity"
 
-#Result
+# Result
 tidydata.txt  : dim 180*88
 column names : 
 [1] "Subject"                                           "Activity"                                         
